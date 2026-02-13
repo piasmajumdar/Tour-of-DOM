@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice DOM</title>
+</head>
+<body>
+    <main>
+        <section>
+            <h1>Welcome to Practicing DOM</h1>
+
+            <h2>My favorite vegetables</h2>
+            <ul>
+                <li class="positive-pranic">Cabbage</li>
+                <li class="negative-pranic">Green Chilly</li>
+                <li class="negative-pranic">Capsicum</li>
+                <li class="positive-pranic">Potato</li>
+                <li class="zero-pranic">Tomato</li>
+                <li class="positive-pranic">Broccoly</li>
+                <li class="positive-pranic">Drum Stick</li>
+            </ul>
+        </section>
+    </main>
+    <script>
+        const positivePranicFood = document.getElementsByClassName('positive-pranic');
+        console.log(positivePranicFood);
+        for(const food of positivePranicFood) {
+            console.log("Positive Pranic Food: ",food.innerText);
+        }
+
+        const negativePranicFood = document.getElementsByClassName('negative-pranic')
+        console.log(negativePranicFood);
+        for(const food of negativePranicFood) {
+            console.log("Negative Pranic Food: ", food.innerText);
+        }
+
+
+        const zeroPranicFood = document.getElementsByClassName('zero-pranic');
+        console.log(zeroPranicFood);
+        for(const food of zeroPranicFood) {
+            console.log("Zero Pranic Food: ", food.innerText);
+        }
+
+    </script>
+</body>
+</html>
