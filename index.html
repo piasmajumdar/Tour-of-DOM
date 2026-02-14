@@ -10,7 +10,8 @@
         h1 {
             color: gold;
         }
-        #food-title{
+
+        #food-title {
             color: green;
             /* margin-left: 20px; */
             /* marginLeft */
@@ -40,11 +41,14 @@
     <header>
         <h1>This is my header no banner</h1>
     </header>
+    <main id="main-container">
+        <section id="old-dhaka" class="songs">
 
-    <section id="old-dhaka" class="songs">
-        <main>
             <h1>Welcome to my DOM</h1>
-            <p>Lorem ipsum dolor <span>oli goli</span> sit amet consectetur adipisicing elit. <span>Alias</span> enim nobis molestias incidunt, ratione magnam neque quaerat tempora eum cum dignissimos dolores natus vitae consectetur. Reiciendis doloribus ea quisquam.</p>
+            <p>Lorem ipsum dolor <span>oli goli</span> sit amet consectetur adipisicing elit. <span>Alias</span> enim
+                nobis
+                molestias incidunt, ratione magnam neque quaerat tempora eum cum dignissimos dolores natus vitae
+                consectetur. Reiciendis doloribus ea quisquam.</p>
             <h1> aseff asdsf <span>some text</span></h1>
             <ul>
                 <li>Shafayet</li>
@@ -59,34 +63,34 @@
             <p>I love you</p>
             <p>I love you</p>
             <p>I love you</p>
-        </main>
-    </section>
 
-    <section class="food">
-        <h1 id="food-title">Foods I love</h1>
-        <ul>
-            <li>Rice</li>
-            <li>Potato</li>
-            <li>Fish</li>
-            <li>Lentils</li>
-            <li class="foreign">Burger</li>
-            <li class="foreign">Pizza</li>
-            <li class="foreign">Pasta</li>
-        </ul>
-    </section>
+        </section>
 
-    <section id="players-container">
-        <h1>Players</h1>
-        <ul id="players-list">
-            <li>Messi</li>
-            <li>Pele</li>
-            <li>Ronaldo</li>
-            <li>Embape</li>
-            <!-- <li>Chele</li> -->
-        </ul>
-    </section>
+        <section class="food">
+            <h1 id="food-title">Foods I love</h1>
+            <ul>
+                <li>Rice</li>
+                <li>Potato</li>
+                <li>Fish</li>
+                <li>Lentils</li>
+                <li class="foreign">Burger</li>
+                <li class="foreign">Pizza</li>
+                <li class="foreign">Pasta</li>
+            </ul>
+        </section>
 
-
+        <section id="players-container">
+            <h1>Players</h1>
+            <ul id="players-list">
+                <li>Messi</li>
+                <li>Pele</li>
+                <li>Ronaldo</li>
+                <li>Embape</li>
+                <!-- <li>Chele</li> -->
+            </ul>
+        </section>
+    </main>
+    
     <script>
         // console.log("Hello from JavaScript!!!");
         // console.log("Hello bole chole gelo");
@@ -126,22 +130,22 @@
         const foodTitleH1 = document.getElementById('food-title');
         // console.log(foodTitleH1.innerText);
         foodTitleH1.innerText = 'Foods I love to eat';
-        
+
         const bandElement = document.getElementById('band');
         bandElement.innerText = 'Jalali Sleeping Band';
-        
+
 
         //get elements by class name
         const foreignElements = document.getElementsByClassName('foreign');
         console.log(foreignElements);
-        for(const element of foreignElements) {
+        for (const element of foreignElements) {
             // console.log(element.innerText)
         }
 
 
         // query selector all
         const spanElements = document.querySelectorAll('#old-dhaka p span');
-        for(const span of spanElements) {
+        for (const span of spanElements) {
             // console.log(span.innerText);
         }
 
@@ -149,6 +153,7 @@
     <script src="./js/hello.js"></script>
     <script src="./js/cssInJS.js"></script>
     <script src="./js/child.js"></script>
+    <script src="./js/append.js"></script>
 </body>
 
 </html>
