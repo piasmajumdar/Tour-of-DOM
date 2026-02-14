@@ -75,6 +75,17 @@
         </ul>
     </section>
 
+    <section id="players-container">
+        <h1>Players</h1>
+        <ul>
+            <li>Messi</li>
+            <li>Pele</li>
+            <li>Ronaldo</li>
+            <li>Embape</li>
+            <!-- <li>Chele</li> -->
+        </ul>
+    </section>
+
 
     <script>
         // console.log("Hello from JavaScript!!!");
@@ -113,7 +124,7 @@
 
         //get by ID
         const foodTitleH1 = document.getElementById('food-title');
-        console.log(foodTitleH1.innerText);
+        // console.log(foodTitleH1.innerText);
         foodTitleH1.innerText = 'Foods I love to eat';
         
         const bandElement = document.getElementById('band');
@@ -124,18 +135,19 @@
         const foreignElements = document.getElementsByClassName('foreign');
         console.log(foreignElements);
         for(const element of foreignElements) {
-            console.log(element.innerText)
+            // console.log(element.innerText)
         }
 
 
         // query selector all
         const spanElements = document.querySelectorAll('#old-dhaka p span');
         for(const span of spanElements) {
-            console.log(span.innerText);
+            // console.log(span.innerText);
         }
 
     </script>
     <script src="./js/hello.js"></script>
+    <script src="./js/cssInJS.js"></script>
 </body>
 
 </html>
