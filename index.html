@@ -13,6 +13,10 @@
         #food-title{
             color: green;
         }
+
+        .food .foreign {
+            font-weight: 700;
+        }
     </style>
 </head>
 
@@ -21,9 +25,11 @@
         <h1>This is my header no banner</h1>
     </header>
 
-    <section>
+    <section id="old-dhaka" class="songs">
         <main>
             <h1>Welcome to my DOM</h1>
+            <p>Lorem ipsum dolor <span>oli goli</span> sit amet consectetur adipisicing elit. <span>Alias</span> enim nobis molestias incidunt, ratione magnam neque quaerat tempora eum cum dignissimos dolores natus vitae consectetur. Reiciendis doloribus ea quisquam.</p>
+            <h1> aseff asdsf <span>some text</span></h1>
             <ul>
                 <li>Shafayet</li>
                 <li class="foreign">Bonobash</li>
@@ -40,7 +46,7 @@
         </main>
     </section>
 
-    <section>
+    <section class="food">
         <h1 id="food-title">Foods I love</h1>
         <ul>
             <li>Rice</li>
@@ -105,6 +111,12 @@
             console.log(element.innerText)
         }
 
+
+        // query selector all
+        const spanElements = document.querySelectorAll('#old-dhaka p span');
+        for(const span of spanElements) {
+            console.log(span.innerText);
+        }
 
     </script>
     <script src="./js/hello.js"></script>
